@@ -3,9 +3,12 @@ from time import time
 
 class findDivisors:
 	def isPrime(self, num):
-		for i in range(2, int(floor(sqrt(num)) + 1)):
-			if not num % i:
-				return False
+		if not num % 2:
+			return False
+		else:
+			for i in range(3, int(floor(sqrt(num)) + 1), 2):
+				if not num % i:
+					return False
 		return True
 
 	def numDivisors(self, num):
@@ -22,7 +25,10 @@ class findDivisors:
 					factors[currFactor] += 1
 				currNum = currNum / currFactor
 			else:
-				currFactor += 1
+				if currFactor == 2:
+					currFactor += 1
+				else:
+					currFactor += 2
 			
 		total = 1
 		for key in factors:
@@ -53,9 +59,12 @@ class findDivisors2:
 		return primes
 
 	def isPrime(self, num):
-		for i in range(2, int(floor(sqrt(num)) + 1)):
-			if not num % i:
-				return False
+		if not num % 2:
+			return False
+		else:
+			for i in range(3, int(floor(sqrt(num)) + 1), 2):
+				if not num % i:
+					return False
 		return True
 
 	def primeGen(self):
