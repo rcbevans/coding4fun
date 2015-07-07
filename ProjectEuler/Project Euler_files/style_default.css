@@ -345,6 +345,13 @@ a.anchor {
    z-index:999;
 }
 
+#admin_message {
+   margin:0 auto;
+   border:1px solid #f93;
+   font-size:90%;
+   width:100%;
+}
+
 #message {
    width:100%;
    background-color: #f9f9f9;
@@ -483,6 +490,15 @@ a.anchor {
 #problems_table_page #problems_table th.title_column {
    width:400px;
 }
+#problems_table_page #problems_table th.solved_by_column {
+   width:80px;
+}
+#problems_table_page #problems_table th.difficulty_column {
+   width:70px;
+}
+#problems_table_page #problems_table td.difficulty_column {
+   padding:5px;
+}
 #problems_table_page #problems_table th.final_column {
    border:none;
    background:none;
@@ -596,6 +612,10 @@ a.anchor {
    vertical-align:middle;
    text-align:center;
 }
+#progress_page #problem_solving_awards_table td,#progress_page #forum_based_awards_table td {
+   font-size:85%;
+}
+
 #progress_page #levels_completed_table img, #progress_page #problem_solving_awards_table img,#progress_page #forum_based_awards_table img {
    width:60px;
 }
